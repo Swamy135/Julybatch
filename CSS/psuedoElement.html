@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psuedo Element</title>
+    <style>
+        #para1::first-line{
+            color: rgb(106, 214, 178);
+        }
+#para2::first-letter{
+    color: rgb(233, 140, 25);
+}
+#para2::after{
+    content: '##############################';
+}
+#para2::before{
+    content: '##############################';
+}
+/*::marker{ color: aqua;
+font-size: 30px;} - apply for ol & ul lists icons*/
+/*li::marker{ color: rgb(213, 112, 153);
+font-size: 50px;}--- apply for all li icons*/
+/*ol li::marker{ color: rgb(213, 112, 153);
+font-size: 60px;} --- apply for in Odered list - All li icons*/
+/*ul li::marker{ color: rgb(98, 80, 219);
+font-size: 70px;}----apply for in unordred list all li icons*/
+/*ol::marker{ color: rgb(61, 194, 66);
+font-size: 70px;}*/
+ul::marker{ color: rgb(61, 194, 66);
+font-size: 70px;}
+    </style>
+</head>
+<body>
+    <p id="para1">this is an para1.<br>
+        this is very beutiful, wonderful,nicely working<br>
+        this is an part of para1.
+    </p>
+<p id="para2"> this is an para2.<br>
+    this is very beutiful, wonderful,nicely working on system<br>
+    this is an part of para2 working on windows 11.
+</p>
+<ol>
+    <li>one</li>
+    <li>Two</li>
+    <li>Three</li>
+    <li>Four</li>
+    <li>Five</li>
+</ol>
+<ul>
+    <li>one</li>
+    <li>Two</li>
+    <li>Three</li>
+    <li>Four</li>
+    <li>Five</li>
+</ul>
+
+
+</body>
+</html>

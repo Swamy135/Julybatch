@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selectors</title>
+    <style>a[target]{color: forestgreen;}/*attribute can define the values*/
+    
+    p[class='Check']{border: 2px solid green;}/*Attribute value is exact match*/
+
+    p[class~='sample']{border: 2px solid rgba(255, 0, 0, 0.675);
+    color: brown;}/*Attribute should contain this values*/
+    /*p[class]{color: blueviolet;}*//*Attribute value is exact match*/
+p[class|='para3']{border: 5px solid rgba(24, 70, 224, 0.675);
+    color: rgb(23, 199, 41);}/*Attribute should contain this values*/ 
+
+    p[title^='panda']{background-color: rgb(167, 226, 29);}/*Attribute value should start with given value*/
+
+    p[title$='happy']{background-color: yellow;
+    text-decoration: line-through;}/*Attribute value should end with given value*/
+
+    p[title*=' ha']{background-color: rgb(255, 119, 0);
+    font-size: 20px;}/*Attribute value should end with given value*/
+
+    </style>
+</head>
+<body>
+    <a href="">sample 1</a>
+    <a href="" target="_self">sample 2</a>
+    <p class="Check sample" title="panda">this is an para1.<br>
+        this is very beutiful, wonderful,nicely working<br>
+        this is an part of para1.
+    </p>
+    <p class="Check" title="panda -happy">this is an para2.<br>
+        this is very beutiful, wonderful,nicely working<br>
+        this is an part of para2.<br>THIS IS AN PART OF ATTRIBUTE SELECTORS PROGRAM
+    </p>
+    <p class="para3" title="----panda">this is an para3.<br>
+        this is very beutiful, wonderful,nicely working<br>
+        this is an part of para2.<br>
+    </p>
+     <p class="para3-sample" title="cutepanda happy">this is an para4.<br>
+                this is very beutiful, wonderful,nicely working<br>
+                this is an part of para2.<br>
+                THIS IS AN PART OF ATTRIBUTE SELECTORS PROGRAM <BR>
+     </p>
+</body>
+</html>
